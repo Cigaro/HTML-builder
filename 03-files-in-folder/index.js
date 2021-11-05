@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const readFrom = '03-files-in-folder/secret-folder'; // из какой папки нужно всё прочитать
 
-function fileStats(file, name){
+function fileStats(file){
   fs.stat(file, (error, stats) => {
     if (error) {
       console.log(error);
