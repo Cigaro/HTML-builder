@@ -17,7 +17,6 @@ function mkDir(){
   fs.mkdir('04-copy-directory/files-copy', err => {
     if(err) {
       if (err.errno === -4075){
-        console.log('hi');
         return listObjects();
       } else throw err;
     } else  listObjects();

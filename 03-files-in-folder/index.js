@@ -21,7 +21,7 @@ function listObjects(){
     for(let i = 0; i< files.length; i++){
       const a = '/';
       let adrees = readFrom + a +files[i];
-      fileStats(adrees, files[i]);
+      fileStats(adrees);
     }
   });}
 listObjects();
